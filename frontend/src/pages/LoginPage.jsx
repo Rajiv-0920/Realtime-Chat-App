@@ -1,4 +1,4 @@
-import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from 'lucide-react';
+import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquareText } from 'lucide-react';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import AuthImagePattern from '../components/AuthImagePattern';
@@ -30,7 +30,7 @@ const LoginPage = () => {
                                 className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20
               transition-colors"
                             >
-                                <MessageSquare className="w-6 h-6 text-primary" />
+                                <MessageSquareText className="w-6 h-6 text-primary" />
                             </div>
                             <h1 className="text-2xl font-bold mt-2">Welcome Back</h1>
                             <p className="text-base-content/60">Sign in to your account</p>
