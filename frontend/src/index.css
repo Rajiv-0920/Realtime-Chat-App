@@ -1,0 +1,407 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+    themes: all;
+}
+
+.shadow {
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+@plugin "daisyui/theme" {
+    name: "rosepetal";
+    default: false;
+    prefersdark: true;
+    color-scheme: dark;
+
+    --color-base-100: #1f1d2b;
+    /* Dark plum base */
+    --color-base-200: #2e2b3a;
+    --color-base-300: #3d394d;
+    --color-base-content: #f9fafb;
+    /* Off-white text */
+
+    --color-primary: #f43f5e;
+    /* Rose red */
+    --color-primary-content: #ffffff;
+
+    --color-secondary: #e11d48;
+    /* Crimson pink */
+    --color-secondary-content: #ffffff;
+
+    --color-accent: #f472b6;
+    /* Blush pink */
+    --color-accent-content: #1f1d2b;
+
+    --color-neutral: #3f3f46;
+    /* Slate gray */
+    --color-neutral-content: #f4f4f5;
+
+    --color-info: #f9a8d4;
+    /* Light rose info */
+    --color-info-content: #1f1d2b;
+
+    --color-success: #84cc16;
+    /* Soft lime green */
+    --color-success-content: #1f1d2b;
+
+    --color-warning: #facc15;
+    /* Golden yellow */
+    --color-warning-content: #1f1d2b;
+
+    --color-error: #dc2626;
+    /* Strong red */
+    --color-error-content: #ffffff;
+
+    --radius-selector: 1rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.75rem;
+
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    --border: 1px;
+    --depth: 1;
+    --noise: 0.02;
+}
+
+@plugin "daisyui/theme" {
+    name: "sunrise-bloom";
+    default: true;
+    prefersdark: false;
+    color-scheme: light;
+
+    --color-base-100: #fffaf5;
+    /* very light peach */
+    --color-base-200: #ffece3;
+    /* pale peach */
+    --color-base-300: #ffd5c2;
+    /* muted coral */
+    --color-base-content: #33272a;
+    /* deep cocoa brown for contrast */
+
+    --color-primary: #FF6B6B;
+    /* warm coral red */
+    --color-primary-content: #ffffff;
+
+    --color-secondary: #FFD93D;
+    /* golden yellow */
+    --color-secondary-content: #33272a;
+
+    --color-accent: #6BCB77;
+    /* mint green accent */
+    --color-accent-content: #ffffff;
+
+    --color-neutral: #A29BFE;
+    /* soft violet */
+    --color-neutral-content: #ffffff;
+
+    --color-info: #00B8D9;
+    --color-info-content: #ffffff;
+
+    --color-success: #2ECC71;
+    --color-success-content: #ffffff;
+
+    --color-warning: #FFAA00;
+    --color-warning-content: #33272a;
+
+    --color-error: #D72638;
+    --color-error-content: #ffffff;
+
+    --radius-selector: 1rem;
+    --radius-field: 0.25rem;
+    --radius-box: 0.5rem;
+
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    --border: 1px;
+
+    --depth: 1;
+    --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+    name: "midnight-void";
+    default: false;
+    prefersdark: true;
+    color-scheme: dark;
+
+    --color-base-100: #0D0F1C;
+    /* deep navy-black */
+    --color-base-200: #1A1D2E;
+    /* dark slate blue */
+    --color-base-300: #2C2F48;
+    /* muted violet-gray */
+    --color-base-content: #E0E0F0;
+    /* light grayish-blue */
+
+    --color-primary: #6C5CE7;
+    /* electric violet */
+    --color-primary-content: #ffffff;
+
+    --color-secondary: #00B894;
+    /* neon teal green */
+    --color-secondary-content: #0D0F1C;
+
+    --color-accent: #FDCB6E;
+    /* soft gold */
+    --color-accent-content: #0D0F1C;
+
+    --color-neutral: #636e72;
+    /* gray tones */
+    --color-neutral-content: #ffffff;
+
+    --color-info: #0984E3;
+    --color-info-content: #ffffff;
+
+    --color-success: #00CEC9;
+    --color-success-content: #0D0F1C;
+
+    --color-warning: #E17055;
+    --color-warning-content: #ffffff;
+
+    --color-error: #D63031;
+    --color-error-content: #ffffff;
+
+    --radius-selector: 1rem;
+    --radius-field: 0.25rem;
+    --radius-box: 0.5rem;
+
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    --border: 1px;
+
+    --depth: 1;
+    --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+    name: "natty";
+    default: true;
+    prefersdark: false;
+    color-scheme: light;
+
+    --color-base-100: #F2F8F2;
+    /* misty mint background */
+    --color-base-200: #E0F2E9;
+    /* slightly deeper mint */
+    --color-base-300: #C7EAD9;
+    /* soft green card */
+    --color-base-content: #2C3E2F;
+    /* dark forest text */
+
+    --color-primary: #5CB85C;
+    /* fresh leafy green */
+    --color-primary-content: #ffffff;
+
+    --color-secondary: #A3D2CA;
+    /* soft sky blue */
+    --color-secondary-content: #2C3E2F;
+
+    --color-accent: #F4A261;
+    /* warm sunset orange */
+    --color-accent-content: #ffffff;
+
+    --color-neutral: #8D7B68;
+    /* earthy brown */
+    --color-neutral-content: #ffffff;
+
+    --color-info: #1C7ED6;
+    /* clean water blue */
+    --color-info-content: #ffffff;
+
+    --color-success: #2ECC71;
+    /* vibrant success green */
+    --color-success-content: #ffffff;
+
+    --color-warning: #E9C46A;
+    /* sand yellow */
+    --color-warning-content: #2C3E2F;
+
+    --color-error: #E76F51;
+    /* clay red */
+    --color-error-content: #ffffff;
+
+    --radius-selector: 0.75rem;
+    --radius-field: 0.25rem;
+    --radius-box: 0.5rem;
+
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    --border: 1px;
+
+    --depth: 1;
+    --noise: 0.05;
+}
+
+@plugin "daisyui/theme" {
+    name: "whatsapp";
+    default: true;
+    prefersdark: false;
+    color-scheme: light;
+
+    --color-base-100: #EDEDED;
+    /* chat background */
+    --color-base-200: #ffffff;
+    /* message input area */
+    --color-base-300: #cccccc;
+    /* divider/line */
+    --color-base-content: #303030;
+    /* default text */
+
+    --color-primary: #075E54;
+    /* app top bar */
+    --color-primary-content: #ffffff;
+
+    --color-secondary: #25D366;
+    /* action/voice/send btn */
+    --color-secondary-content: #ffffff;
+
+    --color-accent: #DCF8C6;
+    /* sender message bubble */
+    --color-accent-content: #303030;
+
+    --color-neutral: #ffffff;
+    /* receiver message bubble */
+    --color-neutral-content: #303030;
+
+    --color-info: #34B7F1;
+    /* link color/info */
+    --color-info-content: #ffffff;
+
+    --color-success: #4CAF50;
+    --color-success-content: #ffffff;
+
+    --color-warning: #FFC107;
+    --color-warning-content: #303030;
+
+    --color-error: #F44336;
+    --color-error-content: #ffffff;
+
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 1rem;
+
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    --border: 1px;
+
+    --depth: 1;
+    --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+    name: "messenger";
+    default: true;
+    prefersdark: false;
+    color-scheme: light;
+
+    --color-base-100: #F5F5F5;
+    /* light background */
+    --color-base-200: #FFFFFF;
+    /* input area */
+    --color-base-300: #e0e0e0;
+    /* divider color */
+    --color-base-content: #000000;
+    /* primary text color */
+
+    --color-primary: #006AFF;
+    /* app top bar and send button */
+    --color-primary-content: #FFFFFF;
+    /* text color on primary elements */
+
+    --color-secondary: #0084FF;
+    /* sender's message bubble */
+    --color-secondary-content: #FFFFFF;
+    /* sender's text color */
+
+    --color-accent: #FFFFFF;
+    /* receiver's message bubble */
+    --color-accent-content: #000000;
+    /* receiver's text color */
+
+    --color-neutral: #B0B0B0;
+    /* secondary text color */
+    --color-neutral-content: #FFFFFF;
+
+    --color-info: #34B7F1;
+    /* info blue for links */
+    --color-info-content: #FFFFFF;
+
+    --color-success: #4CAF50;
+    --color-success-content: #FFFFFF;
+
+    --color-warning: #FFC107;
+    --color-warning-content: #303030;
+
+    --color-error: #F44336;
+    --color-error-content: #FFFFFF;
+
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 1rem;
+
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    --border: 1px;
+
+    --depth: 1;
+    --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+    name: "midnightmint";
+    default: false;
+    prefersdark: true;
+    color-scheme: dark;
+
+    --color-base-100: #0f172a;
+    /* deep slate */
+    --color-base-200: #1e293b;
+    --color-base-300: #334155;
+    --color-base-content: #e2e8f0;
+    /* light gray text */
+
+    --color-primary: #10b981;
+    /* mint green */
+    --color-primary-content: #ffffff;
+
+    --color-secondary: #6366f1;
+    /* soft indigo */
+    --color-secondary-content: #ffffff;
+
+    --color-accent: #06b6d4;
+    /* cyan accent */
+    --color-accent-content: #ffffff;
+
+    --color-neutral: #1f2937;
+    --color-neutral-content: #f3f4f6;
+
+    --color-info: #3b82f6;
+    --color-info-content: #ffffff;
+
+    --color-success: #22c55e;
+    --color-success-content: #ffffff;
+
+    --color-warning: #eab308;
+    --color-warning-content: #1c1917;
+
+    --color-error: #ef4444;
+    --color-error-content: #ffffff;
+
+    --radius-selector: 1.5rem;
+    --radius-field: 0.5rem;
+    --radius-box: 1rem;
+
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    --border: 1px;
+    --depth: 1;
+    --noise: 0;
+}
