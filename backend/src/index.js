@@ -14,7 +14,10 @@ const __dirname = path.resolve();
 app.use(express.json({ limit: '20mb' }));
 app.use(cookieParser());
 
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://realtime-chat-app-rouge-omega.vercel.app',
+];
 
 app.use(
   cors({
